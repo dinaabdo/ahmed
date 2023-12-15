@@ -1,0 +1,211 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        link(rel='icon' href='images/favicon1.png' type='image/icon type')
+        link(rel='stylesheet' href='main.css')
+        title Ahmed Mohamed
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto+Condensed:ital,wght@0,400;1,300&display=swap' rel='stylesheet')
+    body
+        header#home_id
+            .hi
+                p hi,
+                p
+                    | i&apos;m ahmed mohamed,
+                    br
+                    web developer.
+                p You can see my career here
+            nav.header_nav
+                .logo
+                    p A.M
+                ul
+                    a(href='#home_id')
+                        li home
+                    a(href='#about_id')
+                        li about
+                    a(href='#roadmap_id')
+                        li roadmap
+                    a(href='#skills_id')
+                        li skills
+                    a(href='#projects_id')
+                        li projects
+            .svg_header
+                img(src='images/undraw_add_information_j2wg.svg' alt='')
+            .overview
+                .stat
+                    p statistics
+                    ion-icon(name='cellular-outline')
+                .hour
+                    ion-icon(name='time-outline')
+                    p 37 hour
+                    p.change.g +1
+                .day
+                    ion-icon(name='calendar-number-outline')
+                    p 8 day
+                    p.change.g +1
+                .num_problem(style='text-align:center')
+                    ion-icon(name='code-slash-outline')
+                    p
+                        | 996 #[br] #[span(class="text-[11px] text-red-500") max 1372]
+                        br
+                        | code line
+                    p.change.r -376
+            .s-nav
+                ul
+                    li.list
+                        a(href='#skills_id')
+                            span.icon
+                                ion-icon(name='cellular-outline')
+                            span.text Skills
+                    li.list
+                        a(href='#roadmap_id')
+                            span.icon
+                                ion-icon(name='footsteps-outline')
+                            span.text Roadmap
+                    li.list.active
+                        a(href='#')
+                            span.icon
+                                ion-icon(name='home-outline')
+                            span.text Home
+                    li.list
+                        a(href='#projects_id')
+                            span.icon
+                                ion-icon(name='trending-up-outline')
+                            span.text Projects
+                    li.list
+                        a(href='#about_id')
+                            span.icon
+                                ion-icon(name='person-outline')
+                            span.text About
+                    .ind
+        // ------------------------- section 2-----------------
+        section#about_id.section2
+            .text_about
+                p
+                    | Here you can see all the details of my professional life since the beginning of the design of this site until now.
+                p I hope you like my site.
+                p
+                    | If you want to know more personal information about me, press down.
+                p
+                .button learn more ...
+                p
+            .svg_about
+                img(src='images/undraw_profile_re_4a55.svg' alt='')
+                img(src='images/blob1.svg' alt='')
+            .up_to_home(onclick='topFunction()')
+                ion-icon(name='arrow-up-outline')
+        // ------------------------- section 3-----------------
+        section#roadmap_id.section3
+            .svg_about
+                img(src='images/undraw_mind_map_re_nlb6.svg' alt='')
+                img(src='images/blob2.svg' alt='')
+            .text_about
+                p
+                    | Here you can see my roadmap. What I&apos;ve learned, what I&apos;m learning now, and what I&apos;m going to learn.
+                p
+                    | Let&apos;s see my roadmap..
+                p
+                .button learn more ...
+                p
+            .smile
+                div
+                    .hr
+                    p smile
+                    ion-icon(name='heart-circle-outline')
+                    .hr
+        // ------------------------- section 4-----------------
+        section#skills_id.section4
+            .text_about
+                p Find out the techniques I learned, plus some stats.
+                p
+                    | The site features will be constantly upgraded in parallel with the upgrading of my skills according to the pre set roadmap.
+                p
+                .button learn more ...
+                p
+            .svg_about
+                img(src='images/undraw_business_plan_re_0v81 (1).svg' alt='')
+                img(src='images/blob1.svg' alt='')
+            .smile
+                div
+                    .hr
+                    p smile
+                    ion-icon(name='heart-circle-outline')
+                    .hr
+        // ------------------------- section 5-----------------
+        section#projects_id.section5.h-screen.bg-cover.bg-center.flex.justify-center.items-center.flex-col.capitalize(class='text-[1.2rem]')
+            .text.w-fit(class='h-[10%] text-[#e3e3e3]') Soon other projects will be shown here
+            .soon.w-fit.h-fit(class='py-[10px] px-[20px] bg-[#fd2155] text-[#e3e3e3]') soon
+        // ------------------------- FOOTER -----------------
+        footer
+            .email_fan
+                .email
+                    p
+                        | If you want to see new releases as soon as they are released, you can enter your email to receive notification of new updates
+                    form(action='')
+                        input(type='email' placeholder='enter your email')
+                        button.text-black.px-2.py-1.border-0.outline-none.mt-3.rounded-sm(class='bg-[#e3e3e3]') Send
+                .privacy
+                    p typeface by ahmed mohamed
+                    p &#x9;&copy;2022   data privacy   imprint
+            div
+                .menu
+                    ul
+                        li
+                            a(href='#home_id') home
+                        li
+                            a(href='#about_id') about
+                        li
+                            a(href='#roadmap_id') roadmap
+                        li
+                            a(href='#skills_id') skills
+                        li
+                            a(href='#projects_id') projects
+                .connect
+                    ul
+                        li
+                            ion-icon(name='logo-codepen')
+                            a(href='https://codepen.io/your-work' target='_blank') codepen
+                        li
+                            ion-icon(name='code-slash-outline')
+                            a(href='https://codeforces.com/profile/ahmed_mohamed_' target='_blank') codeforces
+                        li
+                            ion-icon(name='logo-linkedin')
+                            a(href='https://www.linkedin.com/in/ahmed-mohamed-a0b3401ab/' target='_blank') linkedin
+                        li
+                            ion-icon(name='logo-github')
+                            a(href='https://github.com/AHMED-MOHAMED320' target='_blank') github
+        // ----------------------------------------------
+        .end
+            p
+                | The first version of the site was designed until the 
+                | current version with 
+                br  
+                span html
+                |  & 
+                span css
+                |  & 
+                span js
+                |  & 
+                span sass
+                |  & 
+                span tailwind
+                |  & 
+                span pug-js
+                br
+                |  current design version (#[span  1.9 ])
+                br
+                The design is still under construction and testing
+                br
+                | and it is not final
+                br
+                | The expected final version (#[span  2.1 ])
+        // ----------------------------------------------
+        script(type='module' src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js')
+        script(nomodule='' src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js')
+        script(src='main.js')
+        |  
+        script(src='https://cdn.tailwindcss.com')
